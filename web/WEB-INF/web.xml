@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>GetList</servlet-name>
+		<servlet-class>ua.kiev.prog.GetListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetList</servlet-name>
+		<url-pattern>/get</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Add</servlet-name>
+		<servlet-class>ua.kiev.prog.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AuthServlet</servlet-name>
+		<servlet-class>ua.kiev.prog.AuthServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AuthServlet</servlet-name>
+		<url-pattern>/auth</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UsersServlet</servlet-name>
+		<servlet-class>ua.kiev.prog.UsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersServlet</servlet-name>
+		<url-pattern>/users</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UserStatusServlet</servlet-name>
+		<servlet-class>ua.kiev.prog.UserStatusServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserStatusServlet</servlet-name>
+		<url-pattern>/userstatus</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetPrivateMessageListServlet</servlet-name>
+		<servlet-class>ua.kiev.prog.GetPrivateMessageListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetPrivateMessageListServlet</servlet-name>
+		<url-pattern>/privatemessage</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CreateChatRoomServlet</servlet-name>
+		<servlet-class>ua.kiev.prog.CreateChatRoomServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateChatRoomServlet</servlet-name>
+		<url-pattern>/createroom</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddRoomServlet</servlet-name>
+		<servlet-class>ua.kiev.prog.AddRoomServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddRoomServlet</servlet-name>
+		<url-pattern>/addroommessage</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetRoomMessageListServlet</servlet-name>
+		<servlet-class>ua.kiev.prog.GetRoomMessageListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetRoomMessageListServlet</servlet-name>
+		<url-pattern>/getroommessage</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>LeaveRoomServlet</servlet-name>
+		<servlet-class>ua.kiev.prog.LeaveRoomServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LeaveRoomServlet</servlet-name>
+		<url-pattern>/leaveroom</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ChatRoomDeleteServlet</servlet-name>
+		<servlet-class>ua.kiev.prog.ChatRoomDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChatRoomDeleteServlet</servlet-name>
+		<url-pattern>/deleteroom</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ChatRoomListServlet</servlet-name>
+		<servlet-class>ua.kiev.prog.ChatRoomListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChatRoomListServlet</servlet-name>
+		<url-pattern>/roomlist</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
